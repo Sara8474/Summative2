@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      
     <title>Second Chance</title>
     
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,800|Roboto&display=swap" rel="stylesheet">
@@ -11,7 +13,18 @@
     
 <div class="profile-banner">  
 </div> 
-
+  <nav>
+	<div class="dropdown">
+  <input type="image" width="30" height="30" src="images/heart-icon.png" class="heart-nav" />
+  <div class="dropdown-content">
+    <a href="index.html">HOME</a>
+    <a href="adopt.html">ADOPT</a>
+    <a href="#">DONATE</a>
+    <a href="#">VOLENTEER</a>
+  </div>
+</div>
+	
+	</nav>
 </head>
 <body class="profile-body">
   <div class="backer-blue">
@@ -41,7 +54,83 @@ I'm good with kids who are respectful of animals, please dont tug on my tail, it
 I've packed on a little chub now but im doing my best, sticking to a better diet so I can get back to a healthy weight.</p>
   </article>
  </div>
+
+ 
+ <section>
+ <div class="carousel">
+        <button class="carousel__button carousel__button--left">
+            <img src="images/arrow_left.png">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="images/profile_slide_1.jpg" alt="Image 1">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/profile_slide_2.jpg" alt="Image 2">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/profile_slide_3.jpg" alt="Image 3">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/profile_slide_4.jpg" alt="Image 4">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/profile_slide_5.jpg" alt="Image 5">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image school-talks-img-6" src="images/profile_slide_6.jpg" alt="Image 6">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right"> 
+            <img src="images/arrow-right.png" alt="right icon">
+        </button>
+
+        <div class="carousel__nav">  
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+  </section>
+ 
+<button id="adopt_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ADOPT ME</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/profile_slide_3.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+ 
  
   </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

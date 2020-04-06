@@ -20,7 +20,9 @@
     <nav>
 	<div class="dropdown">
   <input type="image" width="30" height="30" src="images/heart-icon.png" class="heart-nav" />
+  
   <div class="dropdown-content">
+    <a href="index.html">HOME</a>
     <a href="adopt.html">ADOPT</a>
     <a href="#">DONATE</a>
     <a href="#">VOLENTEER</a>
@@ -36,7 +38,7 @@
 <div class="event-promo"></div>
   </section>
    
-<div>
+<div >
 <img class= "home-account-banner" src="images/account-banner.jpg" alt="Image of pitbull">
 </div>
  
@@ -78,6 +80,7 @@
   
   
   <section>
+   
  <div class="carousel">
         <button class="carousel__button carousel__button--left"> <!-- __ means child-->
             <img src="images/arrow_left.png">
@@ -185,7 +188,42 @@ Quiet reading
   
   <div id="sub-text">
       <h2>TAKE THE QUIZ</h2>
-      <div ID="quiz-button"></div>
+      
+<button id="quiz_button_home" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/take_quiz_image.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+ 
+ 
+ 
+ 
+ 
   </div>
   
   <div class="quiz-section">
@@ -200,7 +238,7 @@ Quiet reading
      <h2 id="contact-text">CONTACT US</h2>
      <h3 id="contact-text-h3">You can find us at...</h3>
      
-      <div id="contact-contain">
+      <div id="contact-contain_home">
           <div id="contact-left">
              <div id="email-icon"></div>
               <div id="insta-icon">
@@ -209,25 +247,54 @@ Quiet reading
               <div id="location-icon"></div>
               <div id="house-icon"></div>
           </div>
-          <div id="contact-right">
-             <div class="contact_space">
-              <h3>EMAIL</h3>
-              <h4>SecondChanceRescue @rescuenz.com</h4>
+          <div id="contact-right_home">
+             
+             <div id="contact_text_contain">
+              <h3 class="contact_h3">EMAIL</h3>
+              <h4  class="contact_h4">SecondChanceRescue @rescuenz.com</h4>
               </div><div class="contact_space">
-              <h3>INSTAGRAM</h3> <h4>@Second_Chance_Rescue</h4>
+              <h3 class="contact_h3">INSTAGRAM</h3> <h4  class="contact_h4">@Second_Chance_Rescue</h4>
               </div><div class="contact_space">
-              <h3>PHONE</h3>
-              <h4>+ 64 02134567</h4>
+              <h3 class="contact_h3">PHONE</h3>
+              <h4  class="contact_h4">+ 64 02134567</h4>
               </div><div class="contact_space">
-              <h3>LOCATION</h3>
-              <h4>12/B Rescue lane</h4>
+              <h3 class="contact_h3">LOCATION</h3>
+              <h4 class="contact_h4">12/B Rescue lane</h4>
+              <h3>BECOME A FOSTER PARENT</h3>
+                  <button id="foster_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">FOSTER</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/take_quiz_image.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+              </div>
               </div>
               <div>
-                  <h3>BECOME A FOSTER PARENT</h3>
-                  <div id="foster-button">
-                      FOSTER BUTTON
-                  </div>
-              </div>
+                
           </div>
       </div>
       

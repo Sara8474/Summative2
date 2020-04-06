@@ -2,21 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      
     <title>Second Chance</title>
     
      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,800|Roboto&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
-    
+      <nav>
+	<div class="dropdown">
+  <input type="image" width="30" height="30" src="images/heart-icon.png" class="heart-nav" />
+  <div class="dropdown-content">
+    <a href="index.html">HOME</a>
+    <a href="adopt.html">ADOPT</a>
+    <a href="#">DONATE</a>
+    <a href="#">VOLENTEER</a>
+  </div>
+</div>
+	
+	</nav>
 </head>
 <body class="body-adopt">
    <div class="banner-adopt"></div>
    
    <h1 class="meet-our-dogs">MEET OUR DOGS!</h1>
    
-   <div class="slideshow">Slideshow</div>
-   
-   <div class="button-quiz">Take the quiz</div>
+   <section>
+ <div class="carousel">
+        <button class="carousel__button carousel__button--left"> <!-- __ means child-->
+            <img src="images/arrow_left.png">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="images/slide_1.png" alt="Image 1">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/slide_2.png" alt="Image 2">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/slide_3.png" alt="Image 3">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/slide_4.png" alt="Image 4">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="images/slide_5.png" alt="Image 5">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image school-talks-img-6" src="images/slide_6.png" alt="Image 6">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right"> 
+            <img src="images/arrow-right.png" alt="right icon">
+        </button>
+
+        <div class="carousel__nav">  
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+  </section>
+           <button id="quiz_button2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">QUIZ</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/take_quiz_image.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
    
    <div class="what-is-sub">
    <h1 class="what-is">WHAT IS THE QUIZ?</h1>
@@ -24,88 +105,144 @@
    <h4>Adoption events require you to take the quiz, this allows us to plan out our events properly and make sure eveyeone is matched for activities!</h4>
    </div>
    
-   <div class="search-header">
-   <article>
-   <h2>Search</h2>
-   </article>
-   <article>
-   <h2>Refine</h2>
-    </article>
-    </div>
-    
-    <div class="search-contain">
-    <div class="search-bar">Search bar</div>
-    <div class="search-refine">Search bar</div>
-    </div>
+   
+   <h2 class="search-header">Search</h2>
+   
     
     <form id="demo-2">
 	<input type="search" placeholder="Search">
     </form>
     
-    
+    <a href="profile.html">
     <div class="profile-grid">
+       
         <article class="profile-contain">
         <img src="images/profile1.jpg" alt="dog">
-        <h4>Name</h4>
+        
         </article>
         <article class="profile-contain">
         <img src="images/profile2.jpg" alt="dog">
-        <h4>Name</h4>
+        
         </article>
         <article class="profile-contain">
         <img src="images/profile3.jpg" alt="dog">
-        <h4>Name</h4>
+       
         </article>
         <article class="profile-contain">
         <img src="images/profile4.jpg" alt="dog">
-        <h4>Name</h4>
+        
         </article>
         <article class="profile-contain">
         <img src="images/profile5.jpg" alt="dog">
-        <h4>Name</h4>
+       
         </article>
         <article class="profile-contain">
         <img src="images/profile6.jpg" alt="dog">
-        <h4>Name</h4>
+        
         </article>
         <article class="profile-contain">
         <img src="images/profile7.jpg" alt="dog">
-        <h4>Name</h4>
+       
         </article>
         <article class="profile-contain">
         <img src="images/profile8.jpg" alt="dog">
-        <h4>Name</h4>
+       
         </article>
         <article class="profile-contain">
-        <img src="images/profile9.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p9" src="images/profile9.jpg" alt="dog">
+        
         </article>
         <article class="profile-contain">
-        <img src="images/profile10.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p10" src="images/profile10.jpg" alt="dog">
+       
         </article>
         <article class="profile-contain">
-        <img src="images/profile11.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p11" src="images/profile11.jpg" alt="dog">
+       
         </article>
         <article class="profile-contain">
-        <img src="images/profile12.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p12" src="images/profile12.jpg" alt="dog">
+        
         </article>
         <article class="profile-contain">
-        <img src="images/profile13.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p13" src="images/profile13.jpg" alt="dog">
+        
         </article>
         <article class="profile-contain">
-        <img src="images/profile14.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p14"  src="images/profile14.jpg" alt="dog">
+        
         </article>
         <article class="profile-contain">
-        <img src="images/profile15.jpg" alt="dog">
-        <h4>Name</h4>
+        <img id="p15"  src="images/profile15.jpg" alt="dog">
+
         </article>
     </div>
+    </a>
     
+      <section id="contact_adopt_page">
+     <h2 id="contact-text">CONTACT US</h2>
+     <h3 id="contact-text-h3">You can find us at...</h3>
+     
+      <div id="contact-contain">
+          <div id="contact-left">
+             <div id="email-icon"></div>
+              <div id="insta-icon">
+              </div>
+              <div id="phone-icon"></div>
+              <div id="location-icon"></div>
+              <div id="house-icon"></div>
+          </div>
+          <div id="contact-right">
+             <div class="contact_space2">
+              <h3>EMAIL</h3>
+              <h4>SecondChanceRescue @rescuenz.com</h4>
+              </div><div class="contact_space2">
+              <h3>INSTAGRAM</h3> <h4>@Second_Chance_Rescue</h4>
+              </div><div class="contact_space2">
+              <h3>PHONE</h3>
+              <h4>+ 64 02134567</h4>
+              </div><div class="contact_space2">
+              <h3>LOCATION</h3>
+              <h4>12/B Rescue lane</h4>
+              </div>
+              <div>
+                  <h3>BECOME A FOSTER PARENT</h3>
+                     <button id="foster_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">FOSTER</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/take_quiz_image.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+              </div>
+          </div>
+      </div>
+      
+  </section>
     
+<script src="js/main.js"></script>
 </body>
 </html>
